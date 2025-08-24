@@ -3,7 +3,6 @@ import matplotlib.pyplot as plt
 from typing import Dict
 from core import CarbonCalculator, MonteCarloEstimator, ScenarioEngine, benchmark, load_default_registry
 
-# Global registry
 registry = load_default_registry()
 
 def plot_breakdown(breakdown: Dict[str,float], title: str):
@@ -41,7 +40,6 @@ def carbon_app(region, electricity, petrol, diesel, lpg, car_km, bus_km, train_k
     per_capita_t = (annual/1000.0)/4
     bench = benchmark(per_capita_t, region=region)
 
-    # Scenario
     actions = {
         "solar_share": solar_share, "efficiency_pct": efficiency_pct,
         "ev_switch_pct": ev_switch_pct,
@@ -110,3 +108,4 @@ def create_interface():
                       outputs=[output_text, out_fig1, out_fig2])
 
     return demo
+
