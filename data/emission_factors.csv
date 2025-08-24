@@ -1,0 +1,13 @@
+category,subcategory,region,scope,factor,unit,source,year,low,high,notes
+electricity,grid,IN,stationary,0.708,kgCO2e/kWh,IEA est,2024,0.65,0.78,India avg grid intensity
+electricity,grid,US,stationary,0.385,kgCO2e/kWh,EPA eGRID,2024,0.30,0.45,US avg grid intensity
+electricity,grid,EU,stationary,0.250,kgCO2e/kWh,EEA,2024,0.18,0.32,EU avg grid intensity
+electricity,grid,GLOBAL,stationary,0.475,kgCO2e/kWh,IPCC default,2024,0.40,0.55,Global avg fallback
+fuel,petrol,GLOBAL,stationary,2.31,kgCO2e/liter,IPCC/DEFRA,2024,2.25,2.38,Gasoline
+fuel,diesel,GLOBAL,stationary,2.68,kgCO2e/liter,IPCC/DEFRA,2024,2.60,2.75,Diesel
+fuel,lpg,GLOBAL,stationary,1.51,kgCO2e/liter,IPCC/DEFRA,2024,1.45,1.58,LPG
+travel,car,GLOBAL,mobile,0.18,kgCO2e/km,DEFRA avg car,2024,0.12,0.24,Depends on fleet; we use avg
+travel,bus,GLOBAL,mobile,0.089,kgCO2e/km,DEFRA bus,2024,0.06,0.12,Per passenger-km
+travel,train,GLOBAL,mobile,0.041,kgCO2e/km,DEFRA rail,2024,0.02,0.07,Per passenger-km
+travel,flight_short,GLOBAL,mobile,0.115,kgCO2e/pkm,DEFRA aviation,2024,0.09,0.14,Short-haul
+travel,flight_long,GLOBAL,mobile,0.102,kgCO2e/pkm,DEFRA aviation,2024,0.08,0.13,Long-haul
